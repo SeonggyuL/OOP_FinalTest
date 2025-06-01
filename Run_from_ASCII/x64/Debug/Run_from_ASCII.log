@@ -1,0 +1,35 @@
+﻿  BaseSingletone.cpp
+  DataManager.cpp
+  GameData.cpp
+  GameManager.cpp
+  main.cpp
+  코드를 생성하고 있습니다...
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(3298,27): error C2027: 정의되지 않은 형식 'InputHandler'을(를) 사용했습니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+      C:\Users\seong\OneDrive\바탕 화면\GameProject\Run_from_ASCII\Run_from_ASCII\GameManager.h(8,7):
+      'InputHandler' 선언을 참조하십시오.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(3298,27):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          C:\Users\seong\OneDrive\바탕 화면\GameProject\Run_from_ASCII\Run_from_ASCII\GameManager.h(24,35):
+          컴파일되는 클래스 템플릿 인스턴스화 'std::unique_ptr<InputHandler,std::default_delete<InputHandler>>'에 대한 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(3334,92):
+          컴파일되는 클래스 템플릿 인스턴스화 'std::default_delete<InputHandler>'에 대한 참조를 확인하세요.
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(3297,23):
+          클래스 템플릿 멤버 함수 'void std::default_delete<InputHandler>::operator ()(_Ty *) noexcept const'을(를) 컴파일하는 중입니다.
+          with
+          [
+              _Ty=InputHandler
+          ]
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(3409,33):
+              'std::unique_ptr<InputHandler,std::default_delete<InputHandler>>::~unique_ptr'에서 'std::default_delete<InputHandler>::operator ()'에 대한 첫 번째 참조를 확인하세요.
+              C:\Users\seong\OneDrive\바탕 화면\GameProject\Run_from_ASCII\Run_from_ASCII\GameManager.h(25,1):
+              'GameManager::~GameManager'에서 'std::unique_ptr<InputHandler,std::default_delete<InputHandler>>::~unique_ptr'에 대한 첫 번째 참조를 확인하세요.
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(3298,25): error C2338: static_assert failed: 'can't delete an incomplete type'
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(3299,9): warning C4150: 불완전한 형식 'InputHandler'에 대한 포인터를 삭제했습니다. 소멸자가 호출되지 않습니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+      C:\Users\seong\OneDrive\바탕 화면\GameProject\Run_from_ASCII\Run_from_ASCII\GameManager.h(8,7):
+      'InputHandler' 선언을 참조하십시오.
+  
