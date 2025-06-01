@@ -2,7 +2,7 @@
 #include "Define.h"
 
 Player::Player(int startX, int mapWidth)
-    : x(startX), y(MAP_HEIGHT - 1), mapWidth(mapWidth) {
+    : x(startX), y(0), mapWidth(mapWidth) {
 }
 
 void Player::MoveLeft() {
@@ -15,3 +15,12 @@ void Player::MoveRight() {
 
 int Player::GetX() const { return x; }
 int Player::GetY() const { return y; }
+
+void Player::DecreaseHP(int amount) {
+    hp -= amount;
+    if (hp < 0) hp = 0;
+}
+
+int Player::GetHP() const {
+    return hp;
+}

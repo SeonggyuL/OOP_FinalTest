@@ -11,7 +11,9 @@ public:
     int GetWidth() const;
     int GetHeight() const;
 
+    std::vector<std::string> buffer;
+
 private:
     int width, height;
-    std::vector<std::string> buffer;
+    
 };
